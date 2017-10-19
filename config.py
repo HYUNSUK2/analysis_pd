@@ -10,7 +10,7 @@ CONFIG = {
         'start_year': 2017,
         'end_year': 2017,
         'restore_directory': '__results__/crawling',
-        'fetch': True}}
+        'fetch': False}}
 
 
 if not os.path.exists(CONFIG['common']['restore_directory']):
