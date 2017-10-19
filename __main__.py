@@ -28,6 +28,9 @@ if __name__ == '__main__':
     graph_table = pd.DataFrame(result_analysis, columns=['tourspot', 'r_중국', 'r_일본', 'r_미국'])
     graph_table = graph_table.set_index('tourspot')
 
+    graph_table = graph_table.drop('서울시립미술관 본관')
+    graph_table = graph_table.drop('서대문자연사박물관')
+
     graph_table.plot(kind='bar', rot=60)
     plt.show()
 
